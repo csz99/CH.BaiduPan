@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "BaiduPan",
+    "description": "BaiduPan",
+    "version": "1.0",
+    "background": {
+        "scripts": [
+            "jquery.js",
+            "background.js"
+        ]
+    },
+    "content_scripts": [{
+        "js": [
+            "jquery.js",
+            "content.js"
+        ],
+        "matches": [
+            "http://pan.baidu.com/disk/*"
+        ]
+    }],
+    "permissions": [
+        "tabs","http://*/*"
+    ]
+}
